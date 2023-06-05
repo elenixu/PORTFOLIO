@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<!-- LINKS ET FONTS -->
+<head>
+ <title>POKEDEX!</title>
+  <link rel="stylesheet" href="index.css"> 
+  <script type="module" src="pokedex.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- POKEDEX LOGO -->
+  <header>
+    <img src="images/pokedex_logo.png" alt="Pokedex_Logo">
+  </header>
+<!-- SEARCH BAR -->
+  <nav>
+    <div class="search-container">
+      <form class="search-bar">
+        <input type="text" placeholder="Search...">
+<!--Buttons--> 
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </nav>
+  <main>
+    <div>
+      <div class="maincontent">
+<!-- SIDE BAR -->
+        <div class="sidebar">
+                <button>Kanto Region</button>
+                <button>Johto Region</button>
+                <button>Hoenn Region</button>
+                <button>Sinnoh Region</button>
+                <button>Unova Region</button>
+                <button>Kalos Region</button>
+                <button>Alola Region</button>
+                <button>Galar Region</button>
+        </div>
+<!-- POKEDEX -->
+      <div class="pokedexContent">
+        <div class="pokedex">
+          <div class="pokedex_image">
+            <img src="images/pokedex.png" alt="pokedex">
+          </div>
+          <div class="left_screen"></div>
+          <div class="right_screen"></div>
+          <button class="button_prev">PREV</button>
+          <button class="button_next">NEXT</button>
+        </div>
+    </div>
+      </div>
+    </div>
+<!-- BECOME A POKEMON TRAINER -->
+<div class="container">
+  <div class="box-1">
+        <section class="becomeatrainer">
+            <h1>Ready to Become a Pokemon trainer?</h1>
+          <form action="process.php" method="post">
+            <div>
+                <label>Trainer Name</label>
+                <input type="text" name="trainer_name" placeholder="Enter your trainer name!">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Enter your email!">
+            </div>
+            <br>
+            <div>
+                <label class="gender-label">Gender</label>
+                <select name="gender">
+                    <option value="nb">Non Binary</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <label>Choose your starter!</label>
+                <select name="Pokemon">
+                    <option value="bulbasaur">Bulbasaur        </option>
+                    <option value="charmander">Charmander      </option>
+                    <option value="squirtle">Squirtle          </option>
+                    <option value="eevee">Eevee                </option>
+                    <option value="pikachu">Pikachu            </option>
+                </select>
+            <br>
+              <label>Choose your trainer type!</label>
+                  <select name="Trainer">
+                    <option value="bugcatcher">Bug Catcher     </option>
+                    <option value="bugcatcher">Hiker				   </option>
+                    <option value="bugcatcher">Lass					   </option>
+                    <option value="youngster">Youngster			 	 </option>
+                    <option value="schoolboy">Schoolboy				 </option>
+                    <option value="jrtrainer">Jr. Trainer    	 </option>	
+                    <option value="pokemaniac">Pokemaniac			 </option>	
+                    <option value="supernerd">Super Nerd			 </option>
+                    <option value="acetrainer">Ace Trainer 		 </option>		
+                    <option value="swimmer">Swimmer 			     </option>			
+                    <option value="fisherman">Fisherman				 </option>
+                    <option value="sailor">Sailor					     </option>
+                    <option value="engineer">Engineer					 </option>
+                    <option value="rocket">Rocket 			       </option>
+                    <option value="scientist">Scientist				 </option>
+                    <option value="psychic">Psychic 			     </option>	
+                    <option value="burglar">Burglar					   </option>
+                    <option value="juggler">Juggler					   </option>	
+                    <option value="tamer">Tamer					       </option>	
+                    <option value="beauty">Beauty					     </option>	
+                    <option value="medium">Medium					     </option>
+                    <option value="channeler">Channeler				 </option>	
+                    <option value="gentleman">Gentleman				 </option>	
+                    <option value="madame">Madame					     </option>
+                    <option value="cooltrainer">Cooltrainer		 </option>
+                  </select>
+            <br>
+    <!--Buttons-->
+            <input type="submit" name="submit" value="submit">
+        </form>
+        </section>
+      </main>
+  </div>
+</div>
+<!-- FOOTER INFO -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-media">
+        <a href="https://www.twitter.com/myusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/myusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/myusername" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+        <p>Elena GIL SALAZAR</p>
+        <p>2B rue du progres | MONTREUIL 93100</p>
+        <p>Phone: +33 0745512396 | Email: elegil93@gmail.com</p>
+        <p> Disponible pour alternance ou apprentissage!</p>
+      </div>
+    </div>
+    
+  </footer>
+</body>
+</html>

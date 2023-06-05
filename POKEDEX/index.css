@@ -1,0 +1,261 @@
+html {
+  height: 100%;
+}
+
+/* POKEDEX LOGO */
+
+header {
+  background-color: #d9f7c8;
+  padding: 40px;
+  width: 100%;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+/* SEARCH BAR */
+
+.search-container {
+  margin: auto; 
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+
+input[type="text"] {
+  background-color: #ffffff;
+  border: 3px solid #ccc;
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+
+  background-color: #4CAF50; 
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* SIDE BAR */
+
+.sidebar {
+  float: left;
+  background-color: #000000;
+  width: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.sidebar button {
+  background-color: #d9f7c8;
+  color: black;
+  border: 5px solid black;
+  border-radius: 35px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vh;
+  flex-grow: 1;
+}
+
+.sidebar button:hover {
+  background-color: rgb(239, 237, 107);
+  border-color: rgb(239, 237, 107);
+}
+
+.sidebar button:active {
+  transform: scale(0.9);
+  background-color: rgb(170, 168, 0);
+  border-color: rgb(170, 168, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  background-color: #d9f7c8;
+}
+
+/* POKEDEX */
+
+.maincontent {
+  background-color: #d9f7c8;
+  display: flex;
+  flex-direction: row;
+}
+
+.pokedex {
+  padding: 30px;
+  position: relative;
+  width: 1200px;
+  height: 900px;
+  background-color: #d9f7c8;
+}
+
+.pokedexContent{
+  background-color: #d9f7c8;
+  width:70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.pokedex_image {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+}
+
+.left_screen {
+  background-color: rgb(191, 143, 233);
+  height: 253px;
+  width: 380px;
+  position: absolute;
+  left: 133px;
+  top: 287px;
+}
+
+.right_screen {
+  background-color: rgb(153, 194, 255);
+  height: 142px;
+  width: 382px;
+  position: absolute;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: larger;
+  left: 736px;
+  top: 310px;
+}
+
+.button_prev {
+  background-color: rgb(211, 209, 71);
+  height: 60px;
+  width: 174px;
+  position: absolute;
+  left: 738px;
+  top: 754px;
+  font-size: 35px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  z-index: 2;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+.button_prev:hover {
+  background-color: rgb(239, 237, 107);
+  border-color: rgb(239, 237, 107);
+}
+
+.button_prev:active {
+  transform: scale(0.9);
+  background-color: rgb(170, 168, 0);
+  border-color: rgb(170, 168, 0);
+}
+
+.button_next {
+  background-color: rgb(45, 247, 38);
+  height: 60px;
+  width: 180px;
+  position: absolute;
+  left: 946px;
+  top: 754px;
+  font-size: 35px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  z-index: 2;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+.button_next:hover {
+  background-color: rgb(239, 237, 107);
+  border-color: rgb(239, 237, 107);
+}
+
+.button_next:active {
+  transform: scale(0.9);
+  background-color: rgb(170, 168, 0);
+  border-color: rgb(170, 168, 0);
+}
+
+.pokemon_sprite {
+  width: 380px;
+  height: 253px;
+  z-index: 0;
+}
+
+
+/* BECOME A POKEMON TRAINER */
+
+.becomeatrainer {
+  font-family: 'Press Start 2P', cursive;
+font-size: 12PX;
+text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.box-1 {
+  background-color: #d9f7c8;
+  border: 5px rgb(0, 0, 0) solid;
+  border-width: 3px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* FOOTER INFO */
+
+.footer-container {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
